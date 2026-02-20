@@ -39,9 +39,12 @@ plt.plot(heights, linestyle='-', color='blue', alpha=0.3, label='Landscape')
 # Slice the data to plot ONLY the deepest lake curves
 lake_indices = range(left_border, right_border + 1)
 lake_values = heights[left_border : right_border + 1]
-
 # Highlight the deepest lake in red
 plt.plot(lake_indices, lake_values, linestyle='-', color='red', linewidth=3, label='Deepest Lake')
+
+# Paint lines to show the water level and depth
+plt.axhline(y= heights[deepest_idx] + max_depth, color='cyan', linestyle='--', label='Water Level')
+plt.axhline(y= heights[deepest_idx], color='orange', linestyle='--', label='Lake Surface')
 
 # Formatting the plot
 plt.title(f'Deepest Lake (Max Depth: {max_depth})')
