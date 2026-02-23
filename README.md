@@ -25,3 +25,6 @@ Matrix state after 20 iterative steps
 ## Task 3: Biased Coins Probability
 
 ![Task 3](screens/task_3.png)
+
+# P.S
+I`m able to visit offline classes
